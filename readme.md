@@ -1,16 +1,21 @@
 ## Advent of Code
 
-to start working on a new year:
+To start working on a new year:
+
 `mkdir <year>`
 
-to start working on a new day:
-`python3 run.py --new <day num> --year <year num>`
+To start working on a new day:
 
-to run the real input:
-`python3 run.py --day <num> --year <num> --part <num>`
+`./run.py --new <day num> --year <year num>`
 
-to run the example input:
-`python3 run.py --day <num> --year <num> --part <num> --example`
+To run the real input:
 
-to show debug output:
-`python3 run.py --day <num> --year <num> --part <num> --debug`
+`./run.py --day <num> --year <num> --part <num>`
+
+To run the example input:
+
+`./run.py --day <num> --year <num> --part <num> --example`
+
+To show debug output:
+
+`./run.py --day <num> --year <num> --part <num> --debug`
