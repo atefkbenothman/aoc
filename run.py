@@ -12,17 +12,6 @@ import time
 from importlib import import_module
 
 
-STARTER_CODE = """\
-import logging
-logger = logging.getLogger()
-
-def part_1(data: list[str]) -> int:
-  return -1
-
-def part_2(data: list[str]) -> int:
-  return -1\
-"""
-
 
 def read_input(file_name: str) -> list[str]:
   with open(file_name, "r") as f:
@@ -76,8 +65,12 @@ if __name__ == "__main__":
       with open(f"{new_dir_full_path}/{file}", "w"):
         pass
 
+    # copy template code to new directory
+    with open("./templates/main.py", "r") as f:
+        template_code = f.read()
+
     with open(f"{new_dir_full_path}/main.py", "w") as f:
-      f.write(textwrap.dedent(STARTER_CODE))
+      f.write(template_code)
 
     print(f"created {new_dir_full_path}")
 
